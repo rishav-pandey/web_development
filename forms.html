@@ -7,39 +7,75 @@
     <title>login</title>
 </head>
 <body>
-     <form action="">
+     <form action="" method="post">
        <div>
         <label for="username">USERNAME &emsp;&emsp;&ensp;&ensp;</label> <br>
-         <input type="text" id="username" required placeholder="abc">
+         <input type="text" id="username" required placeholder="abc" name="text">
         </div>
        <div>
         <label for="password">ENTER PASSWORD</label> <br>
-        <input type="password" id="password" required>
+        <input type="password" id="password" required name="password">
     </div>
 
     <div>
         <label for="phoneno">ENTER NUMBER</label> <br>
-        <input type="number" id="phoneno" required>
+        <input type="number" id="phoneno" required name="number">
     </div>
 
     <div>
         <label for="range">ENTER RANGE </label> <br>
-        <input type="range" id="range" required min="20" max="80" step="5">
+        <input type="range" id="range" required min="20" max="80" step="5" name="range">
+    </div>
+
+    
+    <div>
+        <label for="country">ENTER COUNTRY</label> <br>
+        <input type="country" id="country" required name="country" value="INDIA"  disabled>
     </div>
 
     <div>
         <label for="url">ENTER URL</label> <br>
-        <input type="url" id="url" required>
+        <input type="url" id="url" required  name="url">
     </div>
     <div>
         <label for="time">ENTER TIME &emsp;&emsp; </label> <br>
-        <Input type="time" id="time" required>
+        <Input type="time" id="time" required name="time">
        <div>
         
     <div>
         <label for="email">ENTER E MAIL</label> <br>
-        <input type="email" id="email" required placeholder="abc@example.com">
+        <input type="email" id="email" required placeholder="abc@example.com" name="email">
     </div>
+
+      <p>
+        GENDER
+      </p>
+      <input type="radio" name="gender" value="male" checked> MALE<br>
+      <input type="radio" name="gender" value="female"> FEMALE<br>
+      <input type="radio" name="gender" value="other">OTHER <br>
+     <p>
+        CHECKBOX
+     </p>
+     <input type="checkbox" name="course" value="c++"> C++ <br>
+     <input type="checkbox" name="course" value="java"> java <br>
+     <input type="checkbox" name="course" value="web development"> web development <br>
+     <p>MONTH</p>
+     <select name="month_selected" id="">
+        <option value="">jan</option>
+        <option value="">feb</option>
+        <option value="">march</option>
+        <option value="">april</option>
+        <option value="">may</option>
+        <option value="">june</option>
+        <option value="">july</option>
+     </select>
+     <br>
+     <p>Share your experience</p>
+     <textarea name="experience" id="" cols="30" rows="10"></textarea>
+     <br>
+     <input type="button" value="button 1">
+     <button type="button">button  2</button>
+     <button> <img src="images.png"  height="50" width="50" alt="image display"></button>
         <input type="submit">
     </div>
      </form>
