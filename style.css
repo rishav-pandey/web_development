@@ -1,10 +1,14 @@
 p{
   color: red;
   font-size: 20px;
-  font-family:sans-serif;
+  /* font-family:sans-serif; */
 }
 h1{
     font-size: 40px;
+    /* font-family:sans-serif; */
+}
+h1,p {
+    font-family:sans-serif;
 }
 /* h4{
     text-transform: uppercase;
@@ -14,4 +18,11 @@ h1{
 }
 .cursive{
     font-family:cursive;
+}
+#blog-desc{
+    color: #133ac9;
+}
+li h4{
+    text-transform: uppercase;
+    font-family: cursive;
 }
