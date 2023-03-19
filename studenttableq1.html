@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .inner {
+            width: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Subject wise marks</th>
+            <th>Average</th>
+            <th>SGPA</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>17069</td>
+            <td>Rishav Pandey</td>
+            <td rowspan="4">
+                <table class="inner">
+                    <tr>
+                        <td>Sub-1</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Sub-2</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>Sub-3</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Sub-4</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+            </td>
+            <td>60</td>
+            <td>6</td>
+            <td>B</td>
+        </tr>
+        <tr></tr>
+    </table>
+</body>
+
+</html>
